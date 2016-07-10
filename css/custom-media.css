@@ -1,0 +1,21 @@
+/*Medium small*/
+@media (min-width:500px) and (max-width:900px){
+	.features li{
+		width: 50%;
+		display: inline-block;
+		float: left;
+	}
+
+}
+
+
+@media (max-width:500px){
+
+}
+@media (max-width:800px){
+	.main-watch img{
+		max-width: 90%;
+	}
+	
+}
+

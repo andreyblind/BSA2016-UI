@@ -1,0 +1,37 @@
+@keyframes swinging{
+	0%{
+		transform: rotate(20deg);
+		filter:contrast(90%);
+	}
+	50%{
+		transform: rotate(-2deg)
+	}
+	75%{
+		filter:contrast(130%) brightness(90%);
+	}
+	100%{
+		transform: rotate(7deg);
+		filter:contrast(115%) brightness(125%);
+
+	}
+}
+
+.watch img{
+	filter:grayscale(100%);
+	cursor: pointer;
+}
+
+.watch img:hover{
+	filter:grayscale(0%) contrast(130%);
+	transform: scale(1.1) rotate(14deg);
+	transition-property: all;
+	transition-duration: 1.2s;
+}
+
+.watch img.rotated:hover{
+	transform:rotate(14deg);
+}
+
+.swingShinyImage{
+	animation: swinging 6.5s ease-in-out forwards;
+}
